@@ -1,15 +1,7 @@
-﻿using ChungsCateringApp;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
-namespace ChungsCatering
+namespace ChungsCateringApp
 {
     public partial class MainForm : Form
     {
@@ -22,7 +14,7 @@ namespace ChungsCatering
         Boolean isloggedin = false;
         Boolean isadmin = false;
         Boolean iscustomer = false;
-
+        
         public void Adminloginshow()
         {
 
@@ -45,13 +37,15 @@ namespace ChungsCatering
 
         private void Order_Click(object sender, EventArgs e)
         {
-         //   var ctx = new ChungCateringDatabase2Entities();
+            //   var ctx = new ChungCateringDatabase2Entities();
 
-            if (iscustomer == false){
+            if (iscustomer == false)
+            {
 
                 Userloginshow();
             }
-            else{ 
+            else
+            {
 
                 OrderForm order = new OrderForm();
                 order.MdiParent = this;
@@ -63,9 +57,19 @@ namespace ChungsCatering
 
         private void ReservationReports_Click_1(object sender, EventArgs e)
         {
-            Resreports reservationreport = new Resreports();
-            reservationreport.MdiParent = this;
-            reservationreport.Show();
+            if (iscustomer == false)
+            {
+
+                Adminloginshow();
+            }
+            else
+            {
+
+                Resreports reservationreport = new Resreports();
+                reservationreport.MdiParent = this;
+                reservationreport.Show();
+            }
+
         }
     }
 }

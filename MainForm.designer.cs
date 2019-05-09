@@ -1,4 +1,4 @@
-﻿namespace ChungsCatering
+﻿namespace ChungsCateringApp
 {
     partial class MainForm
     {
@@ -46,7 +46,7 @@
             this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(407, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(677, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,13 +75,13 @@
             // orderReportsToolStripMenuItem
             // 
             this.orderReportsToolStripMenuItem.Name = "orderReportsToolStripMenuItem";
-            this.orderReportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orderReportsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.orderReportsToolStripMenuItem.Text = "Order Reports";
             // 
             // ReservationReports
             // 
             this.ReservationReports.Name = "ReservationReports";
-            this.ReservationReports.Size = new System.Drawing.Size(180, 22);
+            this.ReservationReports.Size = new System.Drawing.Size(178, 22);
             this.ReservationReports.Text = "Reservation Reports";
             this.ReservationReports.Click += new System.EventHandler(this.ReservationReports_Click_1);
             // 
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 314);
+            this.ClientSize = new System.Drawing.Size(677, 577);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;

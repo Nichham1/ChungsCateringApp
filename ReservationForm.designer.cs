@@ -1,4 +1,4 @@
-﻿namespace ChungsCatering
+﻿namespace ChungsCateringApp
 {
     partial class ReservationForm
     {

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChungsCatering
+namespace ChungsCateringApp
 {
     public partial class OrderForm : Form
     {
         public OrderForm()
         {
             InitializeComponent();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
