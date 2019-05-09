@@ -34,6 +34,7 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.orderReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReservationReports = new System.Windows.Forms.ToolStripMenuItem();
+            this.reservationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,8 +43,9 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Order,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.reservationsToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(677, 24);
@@ -55,7 +57,6 @@
             this.Order.Name = "Order";
             this.Order.Size = new System.Drawing.Size(49, 20);
             this.Order.Text = "Order";
-            this.Order.Click += new System.EventHandler(this.Order_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -75,15 +76,22 @@
             // orderReportsToolStripMenuItem
             // 
             this.orderReportsToolStripMenuItem.Name = "orderReportsToolStripMenuItem";
-            this.orderReportsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.orderReportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.orderReportsToolStripMenuItem.Text = "Order Reports";
             // 
             // ReservationReports
             // 
             this.ReservationReports.Name = "ReservationReports";
-            this.ReservationReports.Size = new System.Drawing.Size(178, 22);
+            this.ReservationReports.Size = new System.Drawing.Size(180, 22);
             this.ReservationReports.Text = "Reservation Reports";
             this.ReservationReports.Click += new System.EventHandler(this.ReservationReports_Click_1);
+            // 
+            // reservationsToolStripMenuItem
+            // 
+            this.reservationsToolStripMenuItem.Name = "reservationsToolStripMenuItem";
+            this.reservationsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.reservationsToolStripMenuItem.Text = "Reservations";
+            this.reservationsToolStripMenuItem.Click += new System.EventHandler(this.ReservationsToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -110,6 +118,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem orderReportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ReservationReports;
+        private System.Windows.Forms.ToolStripMenuItem reservationsToolStripMenuItem;
     }
 }
 

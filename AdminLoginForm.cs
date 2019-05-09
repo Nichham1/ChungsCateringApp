@@ -13,9 +13,17 @@ namespace ChungsCateringApp
 {
     public partial class AdminLoginForm : Form
     {
+        MainForm main = new MainForm();
         public AdminLoginForm()
         {
             InitializeComponent();
+        }
+
+        private void BTlogin_Click(object sender, EventArgs e)
+        {
+            main.isadmin = true;
+            main.isloggedin = true;
+
         }
     }
 }

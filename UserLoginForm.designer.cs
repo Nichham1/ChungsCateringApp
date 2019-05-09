@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLoginForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBpassword = new System.Windows.Forms.TextBox();
+            this.TBusername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BTreset = new System.Windows.Forms.Button();
@@ -49,19 +49,20 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // TBpassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(108, 20);
-            this.textBox2.TabIndex = 8;
+            this.TBpassword.Location = new System.Drawing.Point(172, 167);
+            this.TBpassword.Name = "TBpassword";
+            this.TBpassword.PasswordChar = '*';
+            this.TBpassword.Size = new System.Drawing.Size(108, 20);
+            this.TBpassword.TabIndex = 8;
             // 
-            // textBox1
+            // TBusername
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 20);
-            this.textBox1.TabIndex = 7;
+            this.TBusername.Location = new System.Drawing.Point(22, 167);
+            this.TBusername.Name = "TBusername";
+            this.TBusername.Size = new System.Drawing.Size(111, 20);
+            this.TBusername.TabIndex = 7;
             // 
             // label2
             // 
@@ -85,7 +86,7 @@
             // 
             this.BTreset.AutoSize = true;
             this.BTreset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BTreset.Location = new System.Drawing.Point(142, 209);
+            this.BTreset.Location = new System.Drawing.Point(170, 209);
             this.BTreset.Name = "BTreset";
             this.BTreset.Size = new System.Drawing.Size(45, 23);
             this.BTreset.TabIndex = 11;
@@ -102,6 +103,7 @@
             this.BTlogin.TabIndex = 12;
             this.BTlogin.Text = "Login";
             this.BTlogin.UseVisualStyleBackColor = true;
+            this.BTlogin.Click += new System.EventHandler(this.BTlogin_Click);
             // 
             // UserLoginForm
             // 
@@ -111,12 +113,12 @@
             this.Controls.Add(this.BTreset);
             this.Controls.Add(this.BTlogin);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBpassword);
+            this.Controls.Add(this.TBusername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserLoginForm";
-            this.Text = "Form1";
+            this.Text = "User Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,8 +128,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBpassword;
+        private System.Windows.Forms.TextBox TBusername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BTreset;
