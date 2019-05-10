@@ -35,6 +35,7 @@
             this.orderReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReservationReports = new System.Windows.Forms.ToolStripMenuItem();
             this.reservationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,9 +58,12 @@
             this.Order.Name = "Order";
             this.Order.Size = new System.Drawing.Size(49, 20);
             this.Order.Text = "Order";
+            this.Order.Click += new System.EventHandler(this.Order_Click);
             // 
             // toolStripMenuItem2
             // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createUserToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(90, 20);
             this.toolStripMenuItem2.Text = "Management";
@@ -93,6 +97,13 @@
             this.reservationsToolStripMenuItem.Text = "Reservations";
             this.reservationsToolStripMenuItem.Click += new System.EventHandler(this.ReservationsToolStripMenuItem_Click);
             // 
+            // createUserToolStripMenuItem
+            // 
+            this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
+            this.createUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createUserToolStripMenuItem.Text = "CreateUser";
+            this.createUserToolStripMenuItem.Click += new System.EventHandler(this.CreateUserToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem orderReportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ReservationReports;
         private System.Windows.Forms.ToolStripMenuItem reservationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createUserToolStripMenuItem;
     }
 }
 

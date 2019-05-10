@@ -51,6 +51,30 @@ namespace ChungsCateringApp
 
         }
 
+        private void CreateUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (isloggedin == false)
+            {
+                Adminloginshow();
+            }
+            else
+            {
+                if (isadmin == true)
+                {
+                    UserMangFrom UMF = new UserMangFrom();
+                    UMF.MdiParent = this;
+                    UMF.Show();
+                }
+                else
+                {
+                    MessageBox.Show("invalid access");
+                }
+
+            }
+
+        }
+
         private void ReservationReports_Click_1(object sender, EventArgs e)
         {
             if ( isloggedin == false)

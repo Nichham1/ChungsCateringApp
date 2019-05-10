@@ -21,11 +21,9 @@ namespace ChungsCateringApp
 
         private void BTlogin_Click(object sender, EventArgs e)
         {
-            String Username;
-            String Password;
+            String Username, Password , UserType="admin" ;   
             Password = TBpassword.Text;
             Username = TBpassword.Text;
-
             if (Username=="" || Password == "")
             {
                 MessageBox.Show("invalid information");
@@ -33,10 +31,18 @@ namespace ChungsCateringApp
             else
             {
                 main.isloggedin = true;
-                main.iscustomer = true;
-            }
 
-          
+                if (UserType == "admin"){
+                    main.isadmin = true;
+                    main.isloggedin = true;
+                }
+                else if (UserType == "cust"){
+                    main.iscustomer = true;
+                    main.isloggedin = true;
+
+                }
+            }
+        
         }
     }
 }
